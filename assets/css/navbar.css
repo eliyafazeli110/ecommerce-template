@@ -1,0 +1,91 @@
+/* Start Navbar Style */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 2.5rem;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.navbar__login-link {
+  color: white;
+  &:hover {
+    color: blue;
+  }
+}
+
+.navbar__login-close-icon {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.navbar__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.5rem;
+  height: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.navbar__content-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 3.5rem;
+}
+
+.navbar__content__search-section {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  width: 34.5rem;
+  padding: 0 1rem;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--color-bg);
+}
+
+.navbar__content__search-section svg {
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.navbar__content__inp {
+  flex: 1; /* پر کردن فضای باقیمانده */
+  border: none;
+  background: transparent; /* تا رنگ از container بیاد */
+  font-size: medium;
+  height: 100%;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.navbar__content__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__content__icon {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/* Finish Navbar Style */
