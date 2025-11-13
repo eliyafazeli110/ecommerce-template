@@ -1,0 +1,54 @@
+/* Start Hero Section */
+
+.hero {
+  width: 100%;
+  min-height: 663px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../icons/hero/Rectangle\ 2.png");
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+}
+
+.hero__description {
+  margin-top: 2rem;
+  line-height: 1.5rem;
+}
+
+.hero__btn {
+  width: 13rem;
+  height: 4.7rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.hero__information {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.hero__information span {
+  font-family: var(--font-alt);
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.hero__information-item {
+  padding-right: 1.5rem;
+  border-right: 1px solid #d3d3d3;
+  &:last-child {
+    border-right: none;
+  }
+}
+/* Finish Hero Section */
