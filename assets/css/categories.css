@@ -1,0 +1,11 @@
+/* Start Categories Section */
+
+.categories {
+  height: 7.6rem;
+  display: flex;
+  align-items: center;
+  gap: 6.7rem;
+  background-color: var(--color-primary);
+}
+
+/* Finish Categories Section */
