@@ -1,0 +1,78 @@
+.categories {
+  width: 100%;
+  background-color: var(--color-bg);
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+.categories__title {
+  padding-top: 2rem;
+}
+
+.categories__title h1 {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.categories__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories__grid {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-template-areas:
+    "casual formal formal"
+    "party  party  gym";
+  grid-auto-rows: minmax(220px, auto);
+}
+
+.categories__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.categories__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* جلوگیری از فاصله‌های اضافی */
+  border-radius: inherit;
+}
+
+.categories__item--casual {
+  grid-area: casual;
+}
+
+.categories__item--formal {
+  grid-area: formal;
+}
+
+.categories__item--party {
+  grid-area: party;
+}
+
+.categories__item--gym {
+  grid-area: gym;
+}
+
+.categories__item span {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-family: var(--font-alt);
+
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
