@@ -1,6 +1,6 @@
-/* Start Categories Section */
+/* Start Brand-logos Section */
 
-.categories {
+.brand-logos {
   height: 7.6rem;
   display: flex;
   align-items: center;
@@ -8,4 +8,4 @@
   background-color: var(--color-primary);
 }
 
-/* Finish Categories Section */
+/* Finish Brand-logos Section */
