@@ -29,6 +29,7 @@
   transition: 0.2s;
   &:hover {
     background-color: #000;
+    transition: all 0.3s;
   }
 }
 
@@ -49,13 +50,15 @@
   background: white;
 }
 
-.testimonials__stars img {
-  width: 20px;
+.testimonials__user {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .testimonials__name {
   font-family: var(--font-alt);
-  margin: 1rem 0 0.5rem;
+  margin: 1rem 0;
 }
 
 .testimonials__text {

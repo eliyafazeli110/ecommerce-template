@@ -1,0 +1,87 @@
+.footer__top {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  max-height: 320px;
+  border-bottom: 2px solid gray;
+}
+
+.footer__logo {
+  width: 22%;
+}
+
+.footer__logo h2 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer__social {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.footer__social button {
+  border: 0;
+  outline: 0;
+  background: none;
+}
+
+.footer__columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__col h4 {
+  font-family: var(--font-alt);
+}
+
+.footer__col a {
+  display: block;
+  color: #666;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  text-decoration: none;
+  &:hover {
+    color: lightblue;
+  }
+}
+
+/* Footer bottom */
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer__bottom p {
+  font-family: var(--font-alt);
+  color: gray;
+}
+
+.footer__payments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__payments button {
+  border: none;
+  background: none;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
