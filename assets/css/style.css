@@ -3,6 +3,7 @@
 @import url("./brand-logos.css");
 @import url("./product.css");
 @import url("./categories.css");
+@import url("./testimonials.css");
 
 * {
   margin: 0;
