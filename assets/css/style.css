@@ -4,6 +4,8 @@
 @import url("./product.css");
 @import url("./categories.css");
 @import url("./testimonials.css");
+@import url("./newsletter.css");
+@import url("./footer.css");
 
 * {
   margin: 0;
