@@ -1,5 +1,4 @@
 /* Start Hero Section */
-
 .hero {
   width: 100%;
   min-height: 663px;
@@ -7,15 +6,33 @@
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  background-image: url("../images/hero/Rectangle\ 2.png");
+  background-image: url("../../images/hero/Rectangle\ 2.png");
   background-repeat: no-repeat;
+  padding: 0 100px;
 }
 
+/* Title Section */
 .hero__title {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
+  width: 415px;
 }
 
+.hero__title span {
+  display: inline;
+  opacity: 0;
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  transform: translateY(10px);
+  animation: fadeUp 0.3s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Description */
 .hero__description {
   margin-top: 2rem;
   line-height: 1.5rem;

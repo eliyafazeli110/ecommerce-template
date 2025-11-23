@@ -1,12 +1,8 @@
 .categories {
   width: 100%;
-  background-color: var(--color-bg);
+  background-color: white;
   border-radius: 1rem;
-  padding: 0 1rem;
-}
-
-.categories__title {
-  padding-top: 2rem;
+  padding: 16px 100px 0;
 }
 
 .categories__title h1 {
@@ -20,10 +16,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--color-bg);
+  padding: 70px 0 0;
+  border-radius: 2.5rem;
 }
 
 .categories__grid {
-  padding: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -31,6 +29,7 @@
     "casual formal formal"
     "party  party  gym";
   grid-auto-rows: minmax(220px, auto);
+  padding: 4rem;
 }
 
 .categories__item {
