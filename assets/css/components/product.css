@@ -6,14 +6,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 4.2rem 0 1rem 0;
-  border-bottom: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-bg);
+  padding: 72px 100px 0;
 }
 
 .product-section__title {
-  font-family: var(--font-bold);
+  font-family: var(--font-heading);
   font-size: 2rem;
-  margin-bottom: 5rem;
+  padding: 0 0 54px;
 }
 
 .product-section__wrappre-cards {
@@ -91,7 +91,7 @@
 }
 
 .product-section__btn-wrap {
-  padding: 3.2rem 1rem;
+  padding: 36px 16px 64px;
 }
 
 .product-section__btn {

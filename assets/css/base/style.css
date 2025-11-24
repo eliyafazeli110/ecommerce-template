@@ -1,0 +1,41 @@
+@import url("../components/brand-logos.css");
+@import url("../components/categories.css");
+@import url("../components/footer.css");
+@import url("../components/hero.css");
+@import url("../components/navbar.css");
+@import url("../components/newsletter.css");
+@import url("../components/product.css");
+@import url("../components/testimonials.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-alt, sans-serif);
+}
+
+.wrapper-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.wrapper-main__layout {
+  width: 100%;
+  max-width: 1440px;
+  background-color: var(--color-light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  cursor: context-menu;
+}
+
+li {
+  list-style-type: none;
+}

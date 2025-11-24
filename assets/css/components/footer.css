@@ -1,5 +1,6 @@
 .footer__top {
   padding: 4rem 0;
+  padding-inline: clamp(1rem, 5vw, 6.25rem);
   display: flex;
   justify-content: space-between;
   gap: 4rem;

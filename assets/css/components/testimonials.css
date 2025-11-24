@@ -1,12 +1,12 @@
 .testimonials {
-  padding: 4rem 0;
+  padding: 80px 100px;
 }
 
 .testimonials__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 0 0 40px;
 }
 
 .testimonials__title {
