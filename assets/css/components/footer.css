@@ -1,11 +1,26 @@
+.footer {
+  background-color: var(--color-bg);
+}
+
 .footer__top {
-  padding: 4rem 0;
+  padding: 8rem 0 4rem;
+  position: relative;
   padding-inline: clamp(1rem, 5vw, 6.25rem);
   display: flex;
   justify-content: space-between;
   gap: 4rem;
   max-height: 320px;
-  border-bottom: 2px solid gray;
+}
+
+.footer__top::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: clamp(1rem, 5vw, 6.25rem);
+  right: clamp(1rem, 5vw, 6.25rem);
+  height: 2px;
+  background-color: gray;
 }
 
 .footer__logo {
@@ -61,15 +76,17 @@
 
 .footer__bottom {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
+  padding-inline: clamp(1rem, 5vw, 6.25rem);
+  padding-block: 0.5rem;
 }
 
 .footer__bottom p {
   font-family: var(--font-alt);
   color: gray;
+  line-height: 2;
 }
 
 .footer__payments {
@@ -79,10 +96,16 @@
 }
 
 .footer__payments button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
-  background: none;
   outline: none;
-  &:hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
+}
+
+.footer__payments button svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
