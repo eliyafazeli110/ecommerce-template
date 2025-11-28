@@ -1,0 +1,13 @@
+/* ============================
+        SHOW ROUTE
+============================= */
+.show-route {
+  width: 100%;
+  padding-inline: clamp(1rem, 5vw, 6.25rem);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 60%);
+  padding-block: 1.2rem;
+}
