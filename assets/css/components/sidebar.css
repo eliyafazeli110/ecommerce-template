@@ -96,7 +96,7 @@
   transform: translateY(-50%);
 }
 
-.thumb {
+.thumb-circel {
   position: absolute;
   top: 50%;
   width: 18px;
@@ -108,7 +108,7 @@
   touch-action: none;
 }
 
-.thumb:hover {
+.thumb-circel:hover {
   transform: translate(-50%, -50%) scale(1.15);
   transition: 0.15s ease;
 }

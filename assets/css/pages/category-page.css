@@ -1,7 +1,3 @@
-/* .category-page .wrapper-main {
-  background-color: var(--color-light);
-} */
-
 .main-layout {
   width: 100%;
   padding-inline: clamp(1rem, 5vw, 6.25rem);
