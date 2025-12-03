@@ -80,6 +80,7 @@
 }
 
 .product-card__price--current {
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--color-primary);
 }
@@ -87,7 +88,7 @@
 .product-card__price--old {
   color: #999;
   text-decoration: line-through;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 
 .product-section__btn-wrap {
