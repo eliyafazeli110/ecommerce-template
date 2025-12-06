@@ -109,3 +109,45 @@
   align-items: center;
   justify-content: center;
 }
+
+/* ========================== */
+/*        MOBILE DESIGN       */
+/* ========================== */
+
+/* <= 768px (tablet -> mobile) */
+@media (max-width: 54em) {
+  .footer__top {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .footer__logo {
+    width: 40%;
+  }
+
+  .footer__col {
+    gap: var(--space-md);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer__payments {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* <= 576px (small phones) */
+@media (max-width: 40em) {
+  .footer__columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__logo {
+    width: 60%;
+  }
+}

@@ -42,6 +42,7 @@
 }
 
 .newsletter__inp-wrap input {
+  width: 100%;
   padding: 1rem 1rem;
   border-radius: 2rem;
   border: none;
@@ -63,5 +64,25 @@
     background: #000;
     color: white;
     transition: all 0.3s;
+  }
+}
+
+/* <= 1280px */
+@media (max-width: 80em) {
+  .newsletter__form {
+    flex-direction: column;
+  }
+}
+
+/* <= 1024px */
+@media (max-width: 64em) {
+  .newsletter__container {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .newsletter__form {
+    width: 100%;
   }
 }

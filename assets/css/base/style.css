@@ -1,3 +1,4 @@
+@import url("../base/variables.css");
 @import url("../components/brand-logos.css");
 @import url("../components/categories.css");
 @import url("../components/footer.css");
@@ -17,6 +18,7 @@
 
 body {
   font-family: var(--font-alt, sans-serif);
+  overflow-x: hidden;
 }
 
 .wrapper-main {
@@ -30,7 +32,7 @@ body {
 .wrapper-main__layout {
   width: 100%;
   max-width: 1440px;
-  background-color: var(--color-light);
+  background-color: var(--color-white);
 }
 
 a {
@@ -41,4 +43,8 @@ a {
 
 li {
   list-style-type: none;
+}
+
+section {
+  unicode-bidi: unset;
 }
