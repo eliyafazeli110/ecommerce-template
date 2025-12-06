@@ -1,13 +1,33 @@
-/* Start Brand-logos Section */
-
 .brand-logos {
-  height: 7.6rem;
+  min-height: 7.625rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 6.7rem;
   background-color: var(--color-primary);
-  padding: 0 100px;
+  padding-inline: clamp(1rem, 5vw, 6.25rem);
+  flex-wrap: wrap;
 }
 
 /* Finish Brand-logos Section */
+
+/* ---------- Media queries ---------- */
+
+@media (max-width: 96em) {
+  .brand-logos {
+    gap: var(--space-xl);
+  }
+}
+
+/* <= 1280px */
+@media (max-width: 80em) {
+  .brand-logos {
+    justify-content: space-around;
+  }
+}
+
+/* <= 1024px */
+@media (max-width: 64em) {
+  .brand-logos span {
+    padding: 0.6rem;
+  }
+}

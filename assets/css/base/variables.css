@@ -1,8 +1,6 @@
 @font-face {
   font-family: "Inter";
   src: url("../../fonts/Inter_24pt-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
@@ -15,14 +13,64 @@
   src: url("../../fonts/Satoshi-Variable.ttf");
 }
 
+/* ====================================== */
+/*  Variables / Design System — – theme    */
+/*  Desktop + Mobile (Fluid + Responsive) */
+/* ====================================== */
+
 :root {
-  /* Fonts */
+  /* — Fonts & Typefaces — */
   --font-primary: "Inter", sans-serif;
   --font-heading: "Integral", sans-serif;
   --font-alt: "Satoshi", sans-serif;
 
-  /* Colors */
-  --color-primary: #000;
+  /* — Color Palette — */
+  --color-primary: #000000;
   --color-bg: #f0f0f0;
-  --color-light: #fff;
+  --color-white: #ffffff;
+  --color-text: rgba(0, 0, 0, 60%);
+  --color-text-muted: rgba(0, 0, 0, 40%);
+  --color-border: rgba(0, 0, 0, 10%);
+  --color-success: #01ab31;
+  --color-warning: #ffc633;
+  --color-error: #ff3333;
+
+  /* — Typography Scale (Fluid / Responsive) — */
+  --fs-xs: 0.875rem;
+  --fs-sm: 1rem;
+  --fs-md: 1.25rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 2.5rem;
+
+  /* — Spacing / Gaps (modular scale) — */
+  --space-xs: 0.25rem; /* 4px  */
+  --space-sm: 0.5rem; /* 8px  */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 1.5rem; /* 24px */
+  --space-lg-2: 2rem;
+  --space-xl: 2.5rem; /* 40px */
+  --space-xxl: 4rem; /* 64px */
+
+  /* — Border Radius / Radius scale — */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.839rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 3.875rem;
+  --radius-round: 50%;
+
+  /* — Shadows / Elevation — */
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+  /* — Container / Layout — */
+  --container-max-width: 1440px;
+  --container-padding-inline: clamp(1rem, 5vw, 6.25rem);
+
+  /* — Breake Points — */
+  --bp-xl: 90rem;
+  --bp-lg: 80rem;
+  --bp-md: 64rem;
+  --bp-sm: 54rem;
+  --bp-xs: 40rem;
 }
