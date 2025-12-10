@@ -10,4 +10,5 @@
   font-size: 1rem;
   color: rgba(0, 0, 0, 60%);
   padding-block: 1.2rem;
+  white-space: nowrap;
 }

@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/pages/product-details.css" />
     <link rel="stylesheet" href="./assets/css/base/variables.css" />
     <link rel="stylesheet" href="./assets/css/base/style.css" />
-    <title>Document</title>
+    <title>Product Details</title>
   </head>
   <body class="page-product-details">
     <div class="wrapper-main">
@@ -19,6 +20,7 @@
                 >Sign Up Now</a
               >
             </p>
+            <!-- not for home pages -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
@@ -56,7 +58,7 @@
 
             <!-- Brand / Logo -->
             <div class="navbar__brand">
-              <p>SHOP.CO</p>
+              <h1>SHOP.CO</h1>
             </div>
 
             <!-- Main nav -->
@@ -310,7 +312,9 @@
               </div>
 
               <div class="product__image-main">
-                <img src="./assets/images/product-details/image 1.png" alt="Product Main" />
+                <div class="main-img-wrapper">
+                  <img src="./assets/images/product-details/image 1.png" alt="Product Main" />
+                </div>
               </div>
             </section>
 
@@ -389,7 +393,10 @@
 
         <section class="testimonials">
           <div class="testimonials__header">
-            <h1 class="testimonials__title">All Reviews</h1>
+            <div class="testimonials__title">
+              <h1>All Reviews</h1>
+              <p>(451)</p>
+            </div>
             <div class="testimonials__icons">
               <button class="testimonials__btn testimonials__btn--filters">
                 <svg
@@ -530,319 +537,402 @@
           </div>
 
           <div class="product-section__wrappre-cards">
-            <div class="product-card">
-              <div class="product-card__image">
-                <img src="./assets/images/products-pic/image 7.png" alt="" />
-              </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="product-card swiper-slide">
+                  <div class="product-card__image">
+                    <img src="./assets/images/products-pic/image 10.png" alt="" />
+                  </div>
 
-              <div class="product-card__info">
-                <h3 class="product-card__title">T-shirt with Tape Details</h3>
+                  <div class="product-card__info">
+                    <h3 class="product-card__title">T-shirt with Tape Details</h3>
 
-                <div class="product-card__rating">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <p>4.5/5</p>
+                    <div class="product-card__rating">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <p>4.5/5</p>
+                    </div>
+                  </div>
+
+                  <div class="product-card__price">
+                    <span class="product-card__price--current">$120</span>
+                    <span class="product-card__price--old">$150</span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="product-card__price">
-                <span class="product-card__price--current">$120</span>
-                <span class="product-card__price--old">$150</span>
-              </div>
-            </div>
+                <div class="product-card swiper-slide">
+                  <div class="product-card__image">
+                    <img src="./assets/images/products-pic/image 10.png" alt="" />
+                  </div>
 
-            <div class="product-card">
-              <div class="product-card__image">
-                <img src="./assets/images/products-pic/image 7.png" alt="" />
-              </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__title">T-shirt with Tape Details</h3>
 
-              <div class="product-card__info">
-                <h3 class="product-card__title">T-shirt with Tape Details</h3>
+                    <div class="product-card__rating">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <p>4.5/5</p>
+                    </div>
+                  </div>
 
-                <div class="product-card__rating">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <p>4.5/5</p>
+                  <div class="product-card__price">
+                    <span class="product-card__price--current">$120</span>
+                    <span class="product-card__price--old">$150</span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="product-card__price">
-                <span class="product-card__price--current">$120</span>
-                <span class="product-card__price--old">$150</span>
-              </div>
-            </div>
+                <div class="product-card swiper-slide">
+                  <div class="product-card__image">
+                    <img src="./assets/images/products-pic/image 10.png" alt="" />
+                  </div>
 
-            <div class="product-card">
-              <div class="product-card__image">
-                <img src="./assets/images/products-pic/image 7.png" alt="" />
-              </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__title">T-shirt with Tape Details</h3>
 
-              <div class="product-card__info">
-                <h3 class="product-card__title">T-shirt with Tape Details</h3>
+                    <div class="product-card__rating">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <p>4.5/5</p>
+                    </div>
+                  </div>
 
-                <div class="product-card__rating">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <p>4.5/5</p>
+                  <div class="product-card__price">
+                    <span class="product-card__price--current">$120</span>
+                    <span class="product-card__price--old">$150</span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="product-card__price">
-                <span class="product-card__price--current">$120</span>
-                <span class="product-card__price--old">$150</span>
-              </div>
-            </div>
+                <div class="product-card swiper-slide">
+                  <div class="product-card__image">
+                    <img src="./assets/images/products-pic/image 10.png" alt="" />
+                  </div>
 
-            <div class="product-card">
-              <div class="product-card__image">
-                <img src="./assets/images/products-pic/image 7.png" alt="" />
-              </div>
+                  <div class="product-card__info">
+                    <h3 class="product-card__title">T-shirt with Tape Details</h3>
 
-              <div class="product-card__info">
-                <h3 class="product-card__title">T-shirt with Tape Details</h3>
+                    <div class="product-card__rating">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <p>4.5/5</p>
+                    </div>
+                  </div>
 
-                <div class="product-card__rating">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="17"
-                    fill="none"
-                    viewBox="0 0 18 17"
-                  >
-                    <path
-                      fill="#ffc633"
-                      d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
-                    />
-                  </svg>
-                  <p>4.5/5</p>
+                  <div class="product-card__price">
+                    <span class="product-card__price--current">$120</span>
+                    <span class="product-card__price--old">$150</span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="product-card__price">
-                <span class="product-card__price--current">$120</span>
-                <span class="product-card__price--old">$150</span>
+                <div class="product-card swiper-slide">
+                  <div class="product-card__image">
+                    <img src="./assets/images/products-pic/image 10.png" alt="" />
+                  </div>
+
+                  <div class="product-card__info">
+                    <h3 class="product-card__title">T-shirt with Tape Details</h3>
+
+                    <div class="product-card__rating">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="17"
+                        fill="none"
+                        viewBox="0 0 18 17"
+                      >
+                        <path
+                          fill="#ffc633"
+                          d="m8.792 0 2.62 5.64 6.173.748-4.555 4.234 1.197 6.102-5.435-3.023-5.434 3.023 1.196-6.102L0 6.388l6.173-.748z"
+                        />
+                      </svg>
+                      <p>4.5/5</p>
+                    </div>
+                  </div>
+
+                  <div class="product-card__price">
+                    <span class="product-card__price--current">$120</span>
+                    <span class="product-card__price--old">$150</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1323,5 +1413,7 @@
     </div>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/navbar.toggle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./vendor/swiperSlider/swiper.js"></script>
   </body>
 </html>

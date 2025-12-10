@@ -14,13 +14,12 @@
 
 .product-section__title {
   padding: 0 0 54px;
-  text-align: center;
+  text-align: start;
 }
 
 .product-section__title h1 {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 3rem);
-  white-space: nowrap;
 }
 
 .product-section__wrappre-cards {
