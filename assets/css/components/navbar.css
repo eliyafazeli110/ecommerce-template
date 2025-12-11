@@ -20,6 +20,7 @@
 
 .navbar__login-link {
   color: var(--color-white);
+  text-decoration: underline;
 }
 
 .navbar__login-link:hover {
@@ -219,8 +220,8 @@
 }
 
 /* ---------- Media queries ---------- */
-
-@media (max-width: 96em) {
+/* <= 1440px */
+@media (max-width: 90em) {
   .navbar__content {
     gap: var(--space-xl);
   }
