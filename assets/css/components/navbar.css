@@ -8,26 +8,43 @@
 
 /* top header login bar */
 .navbar__login {
+  max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  position: relative;
   min-height: 2.4rem;
   background-color: var(--color-primary);
   color: var(--color-white);
 }
 
-.navbar__login-link {
+.navbar__login--text {
+  text-align: center;
+}
+
+.navbar__login--left {
+  width: 24px;
+}
+
+.navbar__login--link {
   color: var(--color-white);
   text-decoration: underline;
 }
 
-.navbar__login-link:hover {
+.navbar__login--link:hover {
   color: lightblue;
 }
 
-.navbar__login-close-icon:hover {
+.navbar__login--close {
+  padding-inline: clamp(1rem, 5vw, 6.25rem);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar__login--close:hover {
   cursor: pointer;
 }
 

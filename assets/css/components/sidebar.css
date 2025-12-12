@@ -1,5 +1,5 @@
 .sidebar {
-  border: 2px solid gray;
+  border: 1px solid var(--color-border);
   padding: 1.25rem 1.5rem;
   border-radius: 1.5rem;
   max-height: 1440px;
@@ -16,7 +16,7 @@
 }
 
 .tree__group {
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid var(--color-border);
   padding-bottom: 1.5rem;
 }
 
@@ -45,6 +45,8 @@
   height: 1rem;
   line-height: 1;
   position: relative;
+  color: var(--color-text);
+  cursor: pointer;
 }
 
 /* every sidebar title */
@@ -138,10 +140,7 @@
   border-radius: 50%;
   background: var(--c);
   cursor: pointer;
-}
-
-.color span:hover {
-  border: 2.5px solid var(--color-primary);
+  border: 2px solid rgba(0, 0, 0, 30%);
 }
 
 /* Sizes */
@@ -153,12 +152,12 @@
 
 .size {
   padding: 0.625rem 1.25rem;
-  border: 1px solid #ccc;
   border-radius: 2rem;
   height: 2.375rem;
   font-size: 14px;
   font-family: var(--font-alt);
   transition: all 0.2s;
+  background-color: var(--color-bg);
 }
 .size:hover {
   scale: calc(1.1);
@@ -176,4 +175,28 @@
   border-radius: 2rem;
   background: black;
   color: white;
+}
+
+/* ---------- Media queries ---------- */
+/* <= 1440px */
+@media (max-width: 90em) {
+}
+
+/* <= 1280px */
+@media (max-width: 80em) {
+}
+
+/* <= 1024px */
+@media (max-width: 1160px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* <= 768px (tablet -> mobile) */
+@media (max-width: 54em) {
+}
+
+/* <= 576px (small phones) */
+@media (max-width: 40em) {
 }
