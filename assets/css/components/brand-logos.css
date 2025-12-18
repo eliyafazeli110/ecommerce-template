@@ -6,6 +6,7 @@
   background-color: var(--color-primary);
   padding-inline: clamp(1rem, 5vw, 6.25rem);
   flex-wrap: wrap;
+  padding-block: 0.5rem;
 }
 
 /* Finish Brand-logos Section */

@@ -1,5 +1,9 @@
 /* Start Product Section */
 
+.product-section .swiper-wrapper {
+  padding-block: 1rem;
+}
+
 .product-section {
   width: 100%;
   display: flex;
@@ -107,6 +111,8 @@
 }
 
 .product-section__btn {
+  display: inline-block;
+  text-align: center;
   width: 13.5rem;
   height: 3.5rem;
   padding: 1rem;
@@ -123,6 +129,10 @@
 
 .product-section--promo {
   border: none;
+}
+
+.product-section .swiper-slide {
+  width: 100%;
 }
 /* Finish Product Section */
 
