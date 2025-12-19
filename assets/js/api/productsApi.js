@@ -3,8 +3,3 @@ export async function getProducts() {
   if (!res.ok) throw new Error("Failed to fetch products")
   return await res.json()
 }
-
-export async function getProductById(id) {
-  const products = await getProducts()
-  return products.find((p) => String(p.id) === String(id))
-}
