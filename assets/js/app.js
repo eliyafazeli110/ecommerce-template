@@ -5,7 +5,7 @@ import { initProductDetails } from "./pages/productDetails.js"
 
 document.addEventListener("DOMContentLoaded", () => {
   initHomePage()
-  // initProductDetails()
+  initProductDetails()
 })
 
 window.addEventListener("load", () => {

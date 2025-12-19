@@ -40,11 +40,13 @@
 
 .cart-item__image {
   width: 100%;
-  height: auto;
+  max-width: 124px;
 }
 
 .cart-item__image img {
-  height: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
 }
 
 .cart-item__content {

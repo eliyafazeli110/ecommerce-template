@@ -53,9 +53,9 @@ export function renderProductDetails(product) {
     <!-- CTA Buttons -->
     <div class="product__ctas">
       <div class="product__counter">
-        <button class="btn">-</button>
-        <p>1</p>
-        <button class="btn">+</button>
+        <button class="btn btn-minus">-</button>
+        <p class="current-quantity">0</p>
+        <button class="btn btn-plus">+</button>
       </div>
       <button class="btn--primary">Add to Cart</button>
     </div>

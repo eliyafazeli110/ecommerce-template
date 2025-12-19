@@ -2,7 +2,7 @@ import { renderStars } from "../ui/renderStars.js"
 
 export function createProductCard(product) {
   return `
-  <a href="/productDetailPage.html?id=${product.id}" class="product-card swiper-slide">
+  <a href="/product-detail-page.html?id=${product.id}" class="product-card swiper-slide">
       <div class="product-card__image">
         <img src=${product.images[0].url} alt="" />
       </div>
