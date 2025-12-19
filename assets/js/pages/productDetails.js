@@ -1,8 +1,8 @@
 import { getProductById } from "../api/productsApi.js"
 import { getQueryParam } from "../utils/url.js"
-import { renderProductDetails } from "../ui/renderProductDetails.js"
-import { renderProductGallery } from "../ui/renderProductGallery.js"
-import { initGalleryInteractions } from "../components/initGallery.js"
+import { renderProductDetails } from "../ui/productDetails/renderProductDetails.js"
+import { renderProductGallery } from "../ui/productDetails/renderProductGallery.js"
+import { initGalleryInteractions } from "../ui/productDetails/initGallery.js"
 import { addToCart } from "../store/cartActions.js"
 
 export async function initProductDetails() {
@@ -20,13 +20,14 @@ export async function initProductDetails() {
   renderProductGallery(product)
   initGalleryInteractions()
 
-  const [minusBtn, plusBtn] = document.querySelectorAll(".product__counter .btn")
-  const qtyEl = document.querySelector(".product__counter p")
+  const minusBtn = document.querySelector(".product__counter .btn-minus")
+  const plusBtn = document.querySelector(".product__counter .btn-plus")
+  const qtyEl = document.querySelector(".product__counter .current-quantity")
   const addCartBtn = document.querySelector(".btn--primary")
 
   let selectedColor = null
   let selectedSize = null
-  let quantity = 0
+  let quantity = 1
 
   document.querySelectorAll(".color").forEach((colorEl) => {
     colorEl.addEventListener("click", () => {
@@ -54,17 +55,17 @@ export async function initProductDetails() {
   })
 
   minusBtn.addEventListener("click", () => {
-    if (quantity > 0) {
+    if (quantity > 1) {
       quantity--
       qtyEl.textContent = quantity
     }
   })
 
   addCartBtn.addEventListener("click", () => {
-    // if (!selectedColor || !selectedSize) {
-    //   alert("Please select color and size")
-    //   return
-    // }
+    if (!selectedColor || !selectedSize) {
+      alert("Please select color and size")
+      return
+    }
 
     addToCart(product, {
       quantity,

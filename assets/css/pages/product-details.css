@@ -162,7 +162,8 @@
   height: 42px;
   border-radius: 50%;
   cursor: pointer;
-  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  outline-offset: 3px;
 }
 
 .product__colors-wrap {
@@ -194,7 +195,7 @@
 }
 
 .color.active {
-  border-color: #000;
+  outline-color: #000;
 }
 
 /* ============================
@@ -263,14 +264,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
-  border-radius: 62px;
+  border-radius: 4rem;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn:hover {
-  transform: scale(1);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  font-size: 1.8rem;
 }
 
 .btn--primary {
