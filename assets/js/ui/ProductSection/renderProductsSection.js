@@ -1,6 +1,6 @@
-import { createProductCard } from "../components/productCard.js"
+import { createProductCard } from "./createProductCard.js"
 
-export function renderProductSections(products) {
+export function renderProductSection(products) {
   const sections = document.querySelectorAll(".product-section[data-products]")
 
   sections.forEach((section) => {

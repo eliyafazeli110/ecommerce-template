@@ -1,5 +1,5 @@
 import { getCart } from "../store/cartStore.js"
-import { renderCart } from "../ui/renderCart.js"
+import { renderCart } from "../ui/cart/renderCartList.js"
 import { calculateCartTotal } from "../utils/cartUtils.js"
 
 document.addEventListener("DOMContentLoaded", () => {

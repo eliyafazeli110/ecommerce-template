@@ -3,7 +3,10 @@ import { renderCartItem } from "./renderCartItem.js"
 export function renderCart(cartItems) {
   const container = document.querySelector(".cart-list")
 
-  if (!container) return
+  if (!container) {
+    console.warn("Cart container not found")
+    return
+  }
 
   if (cartItems.length === 0) {
     container.innerHTML = "<p>Your cart is empty</p>"

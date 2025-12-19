@@ -1,4 +1,4 @@
-import { renderStars } from "./renderStars.js"
+import { renderStars } from "../renderStars.js"
 
 export function renderProductDetails(product) {
   const container = document.querySelector(".product__info")
@@ -43,10 +43,10 @@ export function renderProductDetails(product) {
     <div class="product__sizes">
       <p>Choose Size:</p>
       <div>
-        <button class="size">Small</button>
-        <button class="size">Medium</button>
-        <button class="size">Large</button>
-        <button class="size">X-Large</button>
+        <button class="size" data-size="small">Small</button>
+        <button class="size" data-size="medium">Medium</button>
+        <button class="size" data-size="large">Large</button>
+        <button class="size" data-size="xlarge">X-Large</button>
       </div>
     </div>
 
@@ -54,7 +54,7 @@ export function renderProductDetails(product) {
     <div class="product__ctas">
       <div class="product__counter">
         <button class="btn btn-minus">-</button>
-        <p class="current-quantity">0</p>
+        <p class="current-quantity">1</p>
         <button class="btn btn-plus">+</button>
       </div>
       <button class="btn--primary">Add to Cart</button>

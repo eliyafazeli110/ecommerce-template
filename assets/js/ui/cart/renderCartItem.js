@@ -36,7 +36,7 @@ export function renderCartItem(item) {
 
         <div class="cart-item__footer">
           <div class="cart-item__price">
-            <span class="cart-item__price-current">$${item.price.current}</span>
+            <span class="cart-item__price-current">$${item.price * item.quantity}</span>
           </div>
           <div class="cart-item__quantity">
             <button class="btn">-</button>

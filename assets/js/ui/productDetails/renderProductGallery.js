@@ -1,4 +1,4 @@
-import { getMainImage } from "../api/productsApi.js"
+import { getMainImage } from "../../utils/imageUtils.js"
 
 export function renderProductGallery(product) {
   const gallery = document.querySelector(".product__gallery")

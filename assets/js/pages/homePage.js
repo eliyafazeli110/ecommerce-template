@@ -1,11 +1,11 @@
 import { getProducts } from "../api/productsApi.js"
-import { createProductCard } from "../components/productCard.js"
-import { renderProductSections } from "../ui/renderProductsSection.js"
+import { createProductCard } from "../ui/ProductSection/createProductCard.js"
+import { renderProductSection } from "../ui/ProductSection/renderProductsSection.js"
 
 export default async function initHomePage() {
   try {
     const products = await getProducts()
-    renderProductSections(products)
+    renderProductSection(products)
   } catch (error) {
     console.error("Failed to load products:", error)
   }

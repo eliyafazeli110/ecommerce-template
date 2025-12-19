@@ -1,4 +1,4 @@
-import { renderStars } from "../ui/renderStars.js"
+import { renderStars } from "../renderStars.js"
 
 export function createProductCard(product) {
   return `
