@@ -1,9 +1,11 @@
+import { getMainImage } from "../services/productService.js"
+
 export function mapProductToCartItem(product, options) {
   return {
     id: product.id,
     name: product.name,
     price: product.price.current,
-    image: product.images.find((img) => img.is_primary)?.url,
+    image: getMainImage(product.images).url,
 
     quantity: options.quantity,
     selectedColor: options.color,

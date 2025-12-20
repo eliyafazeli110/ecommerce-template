@@ -1,6 +1,6 @@
 import { renderCartItem } from "./renderCartItem.js"
 
-export function renderCart(cartItems) {
+export function renderCartList(cartItems) {
   const container = document.querySelector(".cart-list")
 
   if (!container) {

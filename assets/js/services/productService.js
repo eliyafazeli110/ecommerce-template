@@ -1,3 +1,5 @@
+import { getProducts } from "../api/productsApi.js"
+
 export async function getProductById(id) {
   const products = await getProducts()
   return products.find((p) => String(p.id) === String(id))

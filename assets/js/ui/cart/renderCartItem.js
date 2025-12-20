@@ -1,7 +1,11 @@
 export function renderCartItem(item) {
   return `
-    <div class="cart-item">
-      <div class="cart-item__image" data-id="${item.id}">
+    <div  class="cart-item"
+      data-id="${item.id}"
+      data-color="${item.selectedColor}"
+      data-size="${item.selectedSize}"
+    >
+      <div class="cart-item__image">
         <img src="${item.image}" alt="${item.name}" />
       </div>
 
@@ -38,14 +42,13 @@ export function renderCartItem(item) {
           <div class="cart-item__price">
             <span class="cart-item__price-current">$${item.price * item.quantity}</span>
           </div>
-          <div class="cart-item__quantity">
-            <button class="btn">-</button>
-            <p>${item.quantity}</p>
-            <button class="btn">+</button>
+          <div class="cart-item__counter">
+            <button class="btn btn-minus">-</button>
+            <p class="current-quantity">${item.quantity}</p>
+            <button class="btn btn-plus">+</button>
           </div>
         </div>
       </div>
     </div>
-
   `
 }

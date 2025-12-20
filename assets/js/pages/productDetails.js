@@ -1,9 +1,11 @@
-import { getProductById } from "../api/productsApi.js"
+import { getProductById } from "../services/productService.js"
 import { getQueryParam } from "../utils/url.js"
 import { renderProductDetails } from "../ui/productDetails/renderProductDetails.js"
 import { renderProductGallery } from "../ui/productDetails/renderProductGallery.js"
 import { initGalleryInteractions } from "../ui/productDetails/initGallery.js"
-import { addToCart } from "../store/cartActions.js"
+import { addToCart } from "../store/cartStore.js"
+import initQuantityController from "../ui/initQuantityController.js"
+import { mapProductToCartItem } from "../models/productMapper.js"
 
 export async function initProductDetails() {
   const productId = getQueryParam("id")
@@ -49,16 +51,15 @@ export async function initProductDetails() {
     })
   })
 
-  plusBtn.addEventListener("click", () => {
-    quantity++
-    qtyEl.textContent = quantity
-  })
-
-  minusBtn.addEventListener("click", () => {
-    if (quantity > 1) {
-      quantity--
-      qtyEl.textContent = quantity
-    }
+  initQuantityController({
+    minusBtn,
+    plusBtn,
+    valueEl: qtyEl,
+    initialValue: 1,
+    min: 1,
+    onChange: (val) => {
+      quantity = val
+    },
   })
 
   addCartBtn.addEventListener("click", () => {
@@ -67,11 +68,13 @@ export async function initProductDetails() {
       return
     }
 
-    addToCart(product, {
+    const cartItem = mapProductToCartItem(product, {
       quantity,
       color: selectedColor,
       size: selectedSize,
     })
+
+    addToCart(cartItem)
 
     alert("Added to cart")
   })

@@ -1,21 +1,15 @@
-import { getCart, saveCart } from "./cartStore.js"
-import { mapProductToCartItem } from "../models/productMapper.js"
+import { updateCartItemQuantity, removeFromCart } from "./cartStore.js"
 
-export function addToCart(product, options) {
-  const cart = getCart()
+export function increaseQuantity(item) {
+  updateCartItemQuantity(item.id, item.selectedColor, item.selectedSize, 1)
+}
 
-  const existingItem = cart.find(
-    (item) =>
-      item.id === product.id &&
-      item.selectedColor === options.color &&
-      item.selectedSize === options.size
-  )
+export function decreaseQuantity(item) {
+  if (item.quantity <= 1) return
 
-  if (existingItem) {
-    existingItem.quantity += options.quantity
-  } else {
-    cart.push(mapProductToCartItem(product, options))
-  }
+  updateCartItemQuantity(item.id, item.selectedColor, item.selectedSize, -1)
+}
 
-  saveCart(cart)
+export function removeCartItem(item) {
+  removeFromCart(item.id, item.selectedColor, item.selectedSize)
 }
