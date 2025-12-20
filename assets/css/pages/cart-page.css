@@ -98,7 +98,7 @@
   align-items: flex-end;
 }
 
-.cart-item__quantity {
+.cart-item__counter {
   width: 15vw;
   min-width: 105px;
   max-width: 126px;
