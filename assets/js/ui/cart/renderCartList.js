@@ -9,7 +9,7 @@ export function renderCartList(cartItems) {
   }
 
   if (cartItems.length === 0) {
-    container.innerHTML = "<p>Your cart is empty</p>"
+    container.innerHTML = "<p style='font-size:2rem'>Your cart is empty</p>"
     return
   }
 

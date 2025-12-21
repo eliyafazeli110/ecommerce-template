@@ -1,17 +1,20 @@
 import { getCart } from "../store/cartStore.js"
 import { increaseQuantity, decreaseQuantity, removeCartItem } from "../store/cartActions.js"
 import { renderCartList } from "../ui/cart/renderCartList.js"
-import { calculateCartTotal } from "../utils/cartUtils.js"
+import { calculateOrderDetails } from "../utils/cartUtils.js"
+import { renderOrderSummary } from "../ui/orderSummery/renderOrderSummery.js"
 
 const container = document.querySelector(".cart-list")
 
 function CartPage() {
   const cart = getCart()
+  const summaryContainer = document.querySelector(".order-summary")
 
   renderCartList(cart)
 
-  const totalEl = document.querySelector(".order-summary__row--total")
-  totalEl.textContent = `$${calculateCartTotal(cart)}`
+  const orderData = calculateOrderDetails(cart)
+
+  renderOrderSummary(summaryContainer, orderData)
 }
 
 document.addEventListener("DOMContentLoaded", () => {
