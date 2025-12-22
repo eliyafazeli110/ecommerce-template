@@ -4,57 +4,51 @@ import { renderCartList } from "../ui/cart/renderCartList.js"
 import { calculateOrderDetails } from "../utils/cartUtils.js"
 import { renderOrderSummary } from "../ui/orderSummery/renderOrderSummery.js"
 
-const container = document.querySelector(".cart-list")
-
-function CartPage() {
-  const cart = getCart()
+export function initCartPage() {
+  const container = document.querySelector(".cart-list")
   const summaryContainer = document.querySelector(".order-summary")
+  if (!container || !summaryContainer) return
 
-  renderCartList(cart)
-
-  const orderData = calculateOrderDetails(cart)
-
-  renderOrderSummary(summaryContainer, orderData)
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  CartPage()
-
-  window.addEventListener("cartUpdated", () => {
-    CartPage()
-  })
-
-  window.addEventListener("storage", (e) => {
-    if (e.key === "cart") {
-      CartPage()
-    }
-  })
-
-  container.addEventListener("click", (e) => {
-    const cartItemEl = e.target.closest(".cart-item")
-    if (!cartItemEl) return
-
-    const id = Number(cartItemEl.dataset.id)
-    const color = cartItemEl.dataset.color
-    const size = cartItemEl.dataset.size
-
-    // compaire with item from state
+  const render = () => {
     const cart = getCart()
-    const itemInStore = cart.find(
-      (i) => i.id === id && i.selectedColor === color && i.selectedSize === size
-    )
-    if (!itemInStore) return
+    const orderData = calculateOrderDetails(cart)
 
-    if (e.target.closest(".btn-plus")) {
-      increaseQuantity(itemInStore)
-    }
+    renderCartList(cart)
+    renderOrderSummary(summaryContainer, orderData)
+  }
 
-    if (e.target.closest(".btn-minus")) {
-      decreaseQuantity(itemInStore)
-    }
+  render()
 
-    if (e.target.closest(".cart-item__remove")) {
-      removeCartItem(itemInStore)
-    }
+  window.addEventListener("cartUpdated", render)
+  window.addEventListener("storage", (e) => {
+    if (e.key === "cart") render()
   })
-})
+
+  if (!container.dataset.listener) {
+    container.addEventListener("click", (e) => {
+      const cartItemEl = e.target.closest(".cart-item")
+      if (!cartItemEl) return
+
+      // compaire with item from state
+      const { id, color, size } = cartItemEl.dataset
+      const cart = getCart()
+      const itemInStore = cart.find(
+        (i) => i.id === Number(id) && i.selectedColor === color && i.selectedSize === size
+      )
+      if (!itemInStore) return
+
+      if (e.target.closest(".btn-plus")) {
+        increaseQuantity(itemInStore)
+      }
+
+      if (e.target.closest(".btn-minus")) {
+        decreaseQuantity(itemInStore)
+      }
+
+      if (e.target.closest(".cart-item__remove")) {
+        removeCartItem(itemInStore)
+      }
+    })
+    container.dataset.listener = "true"
+  }
+}
