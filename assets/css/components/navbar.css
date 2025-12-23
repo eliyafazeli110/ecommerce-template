@@ -194,6 +194,14 @@
   gap: 0.875rem;
 }
 
+.navbar__content__icons svg {
+  cursor: pointer;
+}
+
+.navbar__content__icons .navbar__cart-count {
+  display: none;
+}
+
 .navbar__content__searchicon {
   display: none;
 }
