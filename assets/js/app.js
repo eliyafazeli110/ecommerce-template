@@ -4,7 +4,7 @@ import { initCounters } from "./ui/shared/counter.js"
 import { initProductDetails } from "./pages/productDetails.js"
 import { updateCartCounter } from "./ui/navbar/updateCartCounter.js"
 import { initCartPage } from "./pages/cartPage.js"
-import { initNavbarToggle } from "./ui/navbar/navbar.toggle.js"
+import { initNavbarToggle } from "./ui/navbar/navbarToggle.js"
 import { priceRange } from "./ui/shared/priceRange.js"
 import { initSliders } from "./ui/shared/swiper.js"
 
