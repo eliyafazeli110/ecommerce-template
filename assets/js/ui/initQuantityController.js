@@ -1,3 +1,5 @@
+import { removeCartItem } from "../store/cartActions.js"
+
 export default function initQuantityController({
   minusBtn,
   plusBtn,
