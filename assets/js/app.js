@@ -5,6 +5,8 @@ import { initProductDetails } from "./pages/productDetails.js"
 import { updateCartCounter } from "./ui/navbar/updateCartCounter.js"
 import { initCartPage } from "./pages/cartPage.js"
 import { initNavbarToggle } from "./ui/navbar/navbar.toggle.js"
+import { priceRange } from "./ui/shared/priceRange.js"
+import { initSliders } from "./ui/shared/swiper.js"
 
 document.addEventListener("DOMContentLoaded", () => {
   updateCartCounter()
@@ -23,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initProductDetails()
   initCartPage()
   initNavbarToggle()
+  initSliders()
+  priceRange()
 })
 
 window.addEventListener("load", () => {
