@@ -1,4 +1,4 @@
-import { renderStars } from "../renderStars.js"
+import { renderStars } from "../shared/renderStars.js"
 
 export function renderProductDetails(product) {
   const container = document.querySelector(".product__info")

@@ -1,12 +1,11 @@
+import quantityController from "../ui/shared/quantityController.js"
 import { getProductById } from "../services/productService.js"
 import { getQueryParam } from "../utils/url.js"
 import { renderProductDetails } from "../ui/productDetails/renderProductDetails.js"
 import { renderProductGallery } from "../ui/productDetails/renderProductGallery.js"
 import { initGalleryInteractions } from "../ui/productDetails/initGallery.js"
 import { addToCart } from "../store/cartStore.js"
-import initQuantityController from "../ui/initQuantityController.js"
 import { mapProductToCartItem } from "../models/productMapper.js"
-import { updateCartCounter } from "../ui/navbar/updateCartCounter.js"
 
 export async function initProductDetails() {
   // پیدا کردن کانتینر اصلی (برای اطمینان از اینکه در صفحه درست هستیم)
@@ -41,23 +40,13 @@ export async function initProductDetails() {
   setupSelection(".color", (val) => (state.color = val))
   setupSelection(".size", (val) => (state.size = val))
 
-  initQuantityController({
+  quantityController({
     minusBtn: document.querySelector(".product__counter .btn-minus"),
     plusBtn: document.querySelector(".product__counter .btn-plus"),
     valueEl: qtyEl,
     initialValue: 1,
     min: 1,
     onChange: (val) => (state.quantity = val),
-  })
-
-  document.querySelectorAll(".color").forEach((colorEl) => {
-    colorEl.addEventListener("click", () => {
-      selectedColor = colorEl.dataset.color
-
-      document.querySelectorAll(".color").forEach((el) => el.classList.remove("active"))
-
-      colorEl.classList.add("active")
-    })
   })
 
   if (addCartBtn) {

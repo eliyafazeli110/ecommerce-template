@@ -2,7 +2,7 @@ import { getCart } from "../store/cartStore.js"
 import { increaseQuantity, decreaseQuantity, removeCartItem } from "../store/cartActions.js"
 import { renderCartList } from "../ui/cart/renderCartList.js"
 import { calculateOrderDetails } from "../utils/cartUtils.js"
-import { renderOrderSummary } from "../ui/orderSummery/renderOrderSummery.js"
+import { renderOrderSummary } from "../ui/orderSummary/renderOrderSummary.js"
 
 export function initCartPage() {
   const container = document.querySelector(".cart-list")
