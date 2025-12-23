@@ -4,6 +4,7 @@ import { initCounters } from "./ui/counter.js"
 import { initProductDetails } from "./pages/productDetails.js"
 import { updateCartCounter } from "./ui/navbar/updateCartCounter.js"
 import { initCartPage } from "./pages/cartPage.js"
+import { initNavbarToggle } from "./ui/navbar/navbar.toggle.js"
 
 document.addEventListener("DOMContentLoaded", () => {
   updateCartCounter()
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initHomePage()
   initProductDetails()
   initCartPage()
+  initNavbarToggle()
 })
 
 window.addEventListener("load", () => {
