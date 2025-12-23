@@ -1,6 +1,6 @@
 import initHomePage from "./pages/homePage.js"
-import { initHeroTyping } from "./ui/heroTyping.js"
-import { initCounters } from "./ui/counter.js"
+import { initHeroTyping } from "./ui/shared/heroTyping.js"
+import { initCounters } from "./ui/shared/counter.js"
 import { initProductDetails } from "./pages/productDetails.js"
 import { updateCartCounter } from "./ui/navbar/updateCartCounter.js"
 import { initCartPage } from "./pages/cartPage.js"
