@@ -1,0 +1,46 @@
+[
+  {
+    "id": 101,
+    "productId": 1,
+    "productName": "Classic Denim Jacket",
+    "userName": "Sarah M.",
+    "isVerified": false,
+    "rating": 2,
+    "comment": "I'm blown away by the quality and style...",
+    "date": "2024-05-12",
+    "helpfulCount": 12
+  },
+  {
+    "id": 102,
+    "productId": 2,
+    "productName": "Classic Denim Jacket",
+    "userName": "Sarah K.",
+    "isVerified": true,
+    "rating": 5,
+    "comment": "I'm blown away by the quality and style...",
+    "date": "2024-05-12",
+    "helpfulCount": 12
+  },
+  {
+    "id": 103,
+    "productId": 3,
+    "productName": "Classic Denim Jacket",
+    "userName": "Sarah L.",
+    "isVerified": false,
+    "rating": 1,
+    "comment": "I'm blown away by the quality and style...",
+    "date": "2024-05-12",
+    "helpfulCount": 12
+  },
+  {
+    "id": 104,
+    "productId": 4,
+    "productName": "Classic Denim Jacket",
+    "userName": "Sarah W.",
+    "isVerified": true,
+    "rating": 5,
+    "comment": "I'm blown away by the quality and style...",
+    "date": "2024-05-12",
+    "helpfulCount": 12
+  }
+]
