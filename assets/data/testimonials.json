@@ -1,46 +1,58 @@
 [
   {
     "id": 101,
-    "productId": 1,
-    "productName": "Classic Denim Jacket",
-    "userName": "Sarah M.",
-    "isVerified": false,
-    "rating": 2,
-    "comment": "I'm blown away by the quality and style...",
-    "date": "2024-05-12",
-    "helpfulCount": 12
+    "author": {
+      "name": "Liam K.",
+      "isVerified": true
+    },
+    "rating": 4,
+    "message": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+    "target": {
+      "type": "product",
+      "id": 12
+    },
+    "createdAt": "2023-08-18"
   },
   {
     "id": 102,
-    "productId": 2,
-    "productName": "Classic Denim Jacket",
-    "userName": "Sarah K.",
-    "isVerified": true,
+    "author": {
+      "name": "Liam T.",
+      "isVerified": true
+    },
     "rating": 5,
-    "comment": "I'm blown away by the quality and style...",
-    "date": "2024-05-12",
-    "helpfulCount": 12
+    "message": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+    "target": {
+      "type": "product",
+      "id": 12
+    },
+    "createdAt": "2023-08-18"
   },
   {
     "id": 103,
-    "productId": 3,
-    "productName": "Classic Denim Jacket",
-    "userName": "Sarah L.",
-    "isVerified": false,
-    "rating": 1,
-    "comment": "I'm blown away by the quality and style...",
-    "date": "2024-05-12",
-    "helpfulCount": 12
+    "author": {
+      "name": "Liam B.",
+      "isVerified": true
+    },
+    "rating": 3,
+    "message": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+    "target": {
+      "type": "product",
+      "id": 12
+    },
+    "createdAt": "2023-08-18"
   },
   {
     "id": 104,
-    "productId": 4,
-    "productName": "Classic Denim Jacket",
-    "userName": "Sarah W.",
-    "isVerified": true,
-    "rating": 5,
-    "comment": "I'm blown away by the quality and style...",
-    "date": "2024-05-12",
-    "helpfulCount": 12
+    "author": {
+      "name": "Liam M.",
+      "isVerified": true
+    },
+    "rating": 3,
+    "message": "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+    "target": {
+      "type": "product",
+      "id": 12
+    },
+    "createdAt": "2023-08-18"
   }
 ]
