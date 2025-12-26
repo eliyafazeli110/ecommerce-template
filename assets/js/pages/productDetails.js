@@ -6,6 +6,8 @@ import { renderProductGallery } from "../ui/productDetails/renderProductGallery.
 import { initGalleryInteractions } from "../ui/productDetails/initGallery.js"
 import { addToCart } from "../store/cartStore.js"
 import { mapProductToCartItem } from "../models/productMapper.js"
+import { initTestimonials } from "../features/initTestimonials.js"
+import { renderLoadMoreButton } from "../ui/shared/renderLoadMoreBtn.js"
 
 export async function initProductDetails() {
   // پیدا کردن کانتینر اصلی (برای اطمینان از اینکه در صفحه درست هستیم)
@@ -25,6 +27,13 @@ export async function initProductDetails() {
   renderProductDetails(product)
   renderProductGallery(product)
   initGalleryInteractions()
+
+  const container = ".testimonials__grid"
+  const testimonials = await initTestimonials(container, true, true, "product", productId)
+  console.log(testimonials)
+  if (testimonials.length >= 1) {
+    renderLoadMoreButton(document.querySelector(".testimonials__footer"))
+  }
 
   //انتخاب المان‌های تعاملی
   const addCartBtn = document.querySelector(".btn--primary")

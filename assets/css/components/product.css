@@ -110,7 +110,8 @@
   padding: 36px 16px 64px;
 }
 
-.product-section__btn {
+.product-section__btn,
+.load-more-btn {
   display: inline-block;
   text-align: center;
   width: 13.5rem;
